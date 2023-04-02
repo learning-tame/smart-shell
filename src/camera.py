@@ -1,5 +1,4 @@
 import picamera
-# import RPi.GPIO as GPI
 
 PICTURE_WIDE = 800
 PICTURE_HEIGHT = 600
@@ -15,4 +14,3 @@ file_name = 'test.jpg'
 save_file = SAVE_DIR + file_name
 
 cam.capture(save_file)
-
