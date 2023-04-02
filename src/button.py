@@ -1,5 +1,6 @@
 import RPi.GPIO as GPIO
 import time
+import camera
 
 # ボタンにつながる配線
 BtnPin = 26
@@ -13,6 +14,7 @@ def setup():
 def click(ev=None):
   print('click')
   '''ここでボタンを押したときにしたい処理を呼ぶ'''
+  camera.take_picture()
   # 連続クリックを防ぐ
   time.sleep(1)
 
