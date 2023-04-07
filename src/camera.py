@@ -17,4 +17,5 @@ def take_picture():
   cam.capture(save_file)
   cam.close()
 
+# usage
 # take_picture()
